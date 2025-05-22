@@ -22,22 +22,22 @@ class CScript;
 /** Default for -blockmaxweight, which controls the range of block weights the mining code will create **/
 static constexpr unsigned int DEFAULT_BLOCK_MAX_WEIGHT{MAX_BLOCK_WEIGHT};
 /** Default for -blockreservedweight **/
-static constexpr unsigned int DEFAULT_BLOCK_RESERVED_WEIGHT{8000};
+static constexpr unsigned int DEFAULT_BLOCK_RESERVED_WEIGHT{16000};
 /** This accounts for the block header, var_int encoding of the transaction count and a minimally viable
  * coinbase transaction. It adds an additional safety margin, because even with a thorough understanding
  * of block serialization, it's easy to make a costly mistake when trying to squeeze every last byte.
  * Setting a lower value is prevented at startup. */
-static constexpr unsigned int MINIMUM_BLOCK_RESERVED_WEIGHT{2000};
+static constexpr unsigned int MINIMUM_BLOCK_RESERVED_WEIGHT{4000};
 /** Default for -blockmintxfee, which sets the minimum feerate for a transaction in blocks created by mining code **/
-static constexpr unsigned int DEFAULT_BLOCK_MIN_TX_FEE{1000};
+static constexpr unsigned int DEFAULT_BLOCK_MIN_TX_FEE{500};
 /** The maximum weight for transactions we're willing to relay/mine */
-static constexpr int32_t MAX_STANDARD_TX_WEIGHT{400000};
+static constexpr int32_t MAX_STANDARD_TX_WEIGHT{800000};
 /** The minimum non-witness size for transactions we're willing to relay/mine: one larger than 64  */
 static constexpr unsigned int MIN_STANDARD_TX_NONWITNESS_SIZE{65};
 /** Maximum number of signature check operations in an IsStandard() P2SH script */
-static constexpr unsigned int MAX_P2SH_SIGOPS{15};
+static constexpr unsigned int MAX_P2SH_SIGOPS{30};
 /** The maximum number of sigops we're willing to relay/mine in a single tx */
-static constexpr unsigned int MAX_STANDARD_TX_SIGOPS_COST{MAX_BLOCK_SIGOPS_COST/5};
+static constexpr unsigned int MAX_STANDARD_TX_SIGOPS_COST{160000};
 /** Default for -incrementalrelayfee, which sets the minimum feerate increase for mempool limiting or replacement **/
 static constexpr unsigned int DEFAULT_INCREMENTAL_RELAY_FEE{1000};
 /** Default for -bytespersigop */

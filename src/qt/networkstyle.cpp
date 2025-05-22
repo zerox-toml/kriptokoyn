@@ -17,11 +17,11 @@ static const struct {
     const int iconColorHueShift;
     const int iconColorSaturationReduction;
 } network_styles[] = {
-    {ChainType::MAIN, QAPP_APP_NAME_DEFAULT, 0, 0},
-    {ChainType::TESTNET, QAPP_APP_NAME_TESTNET, 70, 30},
-    {ChainType::TESTNET4, QAPP_APP_NAME_TESTNET4, 70, 30},
-    {ChainType::SIGNET, QAPP_APP_NAME_SIGNET, 35, 15},
-    {ChainType::REGTEST, QAPP_APP_NAME_REGTEST, 160, 30},
+    {ChainType::MAIN, "Kriptokoyn", 0, 0},
+    {ChainType::TESTNET, "Kriptokoyn Testnet", 70, 30},
+    {ChainType::TESTNET4, "Kriptokoyn Testnet4", 70, 30},
+    {ChainType::SIGNET, "Kriptokoyn Signet", 35, 15},
+    {ChainType::REGTEST, "Kriptokoyn Regtest", 160, 30},
 };
 
 // titleAddText needs to be const char* for tr()

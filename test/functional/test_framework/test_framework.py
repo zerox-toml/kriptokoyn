@@ -123,10 +123,10 @@ class BitcoinTestMetaClass(type):
         return super().__new__(cls, clsname, bases, dct)
 
 
-class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
-    """Base class for a bitcoin test script.
+class KriptokoynTestFramework(metaclass=BitcoinTestMetaClass):
+    """Base class for a kriptokoyn test script.
 
-    Individual bitcoin test scripts should subclass this class and override the set_test_params() and run_test() methods.
+    Individual kriptokoyn test scripts should subclass this class and override the set_test_params() and run_test() methods.
 
     Individual tests can also override the following methods to customize the test setup:
 
