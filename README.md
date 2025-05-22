@@ -1,24 +1,4 @@
-# Kriptokoyn
 
-Kriptokoyn is a modern cryptocurrency built on the Bitcoin Core codebase, offering enhanced features and improved performance. Visit [kriptokyng.com](http://kriptokyng.com/) for more information.
-
-## Key Features
-
-- **Faster Block Times**: 2-minute block intervals (vs Bitcoin's 10 minutes)
-- **Larger Block Size**: 8MB blocks for improved scalability
-- **Lower Fees**: Optimized fee structure for cost-effective transactions
-- **Modern Features**: All BIPs enabled from genesis
-- **Frequent Halvings**: Halving every ~2 years (105,000 blocks)
-
-## Technical Specifications
-
-- **Block Time**: 2 minutes
-- **Block Size**: 8MB
-- **Max Block Weight**: 8,000,000
-- **Max SigOps per Block**: 160,000
-- **Coinbase Maturity**: 50 blocks
-- **Network Port**: 18333
-- **Halving Interval**: 105,000 blocks
 
 ## Building Kriptokoyn
 
