@@ -105,7 +105,7 @@ constexpr CAmount DEFAULT_PAY_TX_FEE = 0;
 //! -fallbackfee default
 static const CAmount DEFAULT_FALLBACK_FEE = 0;
 //! -discardfee default
-static const CAmount DEFAULT_DISCARD_FEE = 10000;
+static const CAmount DEFAULT_DISCARD_FEE = 5000;
 //! -mintxfee default
 static const CAmount DEFAULT_TRANSACTION_MINFEE = 500;
 //! -consolidatefeerate default
